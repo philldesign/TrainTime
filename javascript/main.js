@@ -27,8 +27,14 @@ var firebaseConfig = {
     storageBucket: "train-schedule-55681.appspot.com",
     messagingSenderId: "669334403620",
     appId: "1:669334403620:web:02515655ef4fe8601db6b1"
-  };
+};
+
+firebase.initializeApp(config);
 
 
+$("#formID").on("submit", function (event) {
+    event.preventDefault();
 
-  
+
+})
+
