@@ -1,31 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TrainTime</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TrainTime</title>
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 </head>
+
 <body>
-    
-        <div class="container">
-                <div class="jumbotron">
-                  <h1>The Train, it's coming!</h1>
-                  <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing
-                  responsive, mobile-first projects on the web.</p>
-                </div>
-\              </div>
-              
+
+  <div class="container">
+
+    <div class="container">
+      <div class="jumbotron">
+        <h1>The Train, it's coming!</h1>
+        <p> * Check what time it is fellas! * </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        Current Train Schedule
+      </div>
+      <div class="card-body">
+
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Train Name</th>
+              <th scope="col">Destination</th>
+              <th scope="col">Frequency(min)</th>
+              <th scope="col">Next Arrival</th>
+              <th scope="col">Minutes Away</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Destination</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">Frequency(min)</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">Next Arrival</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+            <tr>
+              <th scope="row">Minutes Away</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+      </div>
+    </div>
+
+
+
+    <div class="card">
+      <div class="card-header">
+
+        Add Train
+      </div>
+      <div class="card-body">
+
+        <form>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Train Time</label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Destination</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2">
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput">First Train Time (HH:mm – Military Time)</label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Freuqency (min)</label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+          </div>
+        </form>
+
+        <a href="#" class="btn btn-primary">Submit</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
 
 </body>
+<br>
+
+<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script src="javascript/main.js"></script>
+
+
 </html>
